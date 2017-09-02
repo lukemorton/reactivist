@@ -1,6 +1,7 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { renderStatic } from 'glamor/server'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
   static async getInitialProps ({ renderPage }) {
@@ -18,13 +19,18 @@ export default class MyDocument extends Document {
   }
 
   render () {
+    const sheet = new ServerStyleSheet()
+    const main = sheet.collectStyles(<Main />)
+
     return (
       <html>
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          {sheet.getStyleElement()}
         </Head>
         <body>
-          <Main />
+          {main}
+
           <NextScript />
         </body>
       </html>
