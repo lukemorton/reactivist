@@ -31,6 +31,9 @@ const typography = style({
       margin: '0',
       paddingTop: '1em'
     },
+    '& p': {
+      fontSize: '1em'
+    }
   }
 })
 
