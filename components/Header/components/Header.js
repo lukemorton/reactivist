@@ -7,7 +7,7 @@ import Nav from './Nav'
 
 const headerStyle = style({
   background: purple(),
-  borderBottom: purple('dark'),
+  boxShadow: '0 0 8px rgba(0,0,0, .2)',
   height: '9em',
   overflow: 'hidden',
   textAlign: 'center',

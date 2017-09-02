@@ -4,8 +4,6 @@ import * as Layout from './Layout'
 import { purple } from '../colors'
 
 const contentStyle = style({
-  background: purple('white'),
-  color: purple('black'),
   paddingBottom: '2em'
 })
 
@@ -28,7 +26,7 @@ Content.Title = ({ children }) =>
 const raisedStyle = style({
   background: 'white',
   borderRadius: '.2em',
-  boxShadow: '0 0 8px rgba(0,0,0, .05)',
+  boxShadow: '0 0 8px rgba(0,0,0, .03)',
   marginTop: '1em',
   padding: '1.5em'
 })
