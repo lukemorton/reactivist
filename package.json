@@ -10,6 +10,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "glamor": "^2.20.40",
     "hedron": "^0.7.1",
     "next": "^3.2.1",
     "react": "^15.6.1",
