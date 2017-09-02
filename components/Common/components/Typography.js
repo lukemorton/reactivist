@@ -2,7 +2,7 @@ import React from 'react'
 import { style } from 'glamor'
 
 const typography = style({
-  fontFamily: 'sans-serif',
+  fontFamily: 'Roboto, sans-serif',
   fontSize: '14px',
   lineHeight: '1.5',
   '& h1, & h2, & h3, & h4': {
@@ -20,6 +20,9 @@ const typography = style({
     fontSize: '1.2em',
     margin: '0',
     paddingTop: '1.5em'
+  },
+  '& p:first-child': {
+    paddingTop: '0'
   },
   '@media (min-width: 768px)': {
     fontSize: '18px',
