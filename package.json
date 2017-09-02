@@ -3,17 +3,19 @@
   "scripts": {
     "build": "next build && babel bin/ -d dist/bin/ && babel src/ -d dist/src/",
     "start": "NODE_ENV=production node dist/bin/start.js",
-    "dev": "NODE_ENV=development nodemon bin/start.js --exec babel-node --watch bin/start.js --watch app.js",
+    "dev": "NODE_ENV=development nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
     "test": "jest --notify",
     "deploy": "now && now alias"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "hedron": "^0.7.1",
     "next": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "republic": "^0.3.2"
+    "republic": "^0.3.2",
+    "styled-components": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
