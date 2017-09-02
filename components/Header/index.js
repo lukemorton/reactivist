@@ -1,3 +1,4 @@
+import Branding from './components/Branding'
 import Header from './components/Header'
 
-export { Header }
+export { Branding, Header }
