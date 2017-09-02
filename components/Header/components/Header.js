@@ -19,7 +19,8 @@ const jumboHeaderStyle = style(headerStyle, {
 
 const backgroundStyle = style({
   background: 'linear-gradient(160deg, #673ab6 0%,#db4437 100%)',
-  height: '700px'
+  minHeight: '28em',
+  paddingBottom: '2em'
 })
 
 export default ({ jumbo }) =>
