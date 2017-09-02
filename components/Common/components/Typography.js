@@ -7,7 +7,7 @@ const typography = style({
   lineHeight: '1.5',
   '& h1, & h2, & h3, & h4': {
     margin: '0',
-    paddingTop: '.5em'
+    paddingTop: '1em'
   },
   '& h1': { fontSize: '3em' },
   '& h2': { fontSize: '2.2em' },
