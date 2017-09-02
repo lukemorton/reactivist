@@ -6,14 +6,14 @@ if (typeof window !== 'undefined') {
 }
 
 import 'glamor/reset'
-import { Head, Layout, Typography } from '../../Common'
+import { Head, Typography } from '../../Common'
 import { Header } from '../../Header'
 
 export default ({ title, children }) =>
-  <Layout.Page>
+  <main>
     <Typography>
       <Head title={title} />
       <Header />
       {children}
     </Typography>
-  </Layout.Page>
+  </main>

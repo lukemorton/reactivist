@@ -1,7 +1,11 @@
 import React from 'react'
-import { Page as HedronPage, Row, Column } from 'hedron'
+import * as Hedron from 'hedron'
 
-const Page = (props) =>
-  <HedronPage tagName='main' {...props} />
+const Row = (props) =>
+  <Hedron.Page>
+    <Hedron.Row {...props} />
+  </Hedron.Page>
 
-export { Page, Row, Column }
+const Column = Hedron.Column
+
+export { Row, Column }
