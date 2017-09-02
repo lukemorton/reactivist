@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { style } from 'glamor'
 import { Layout } from '../../Common'
 
@@ -20,13 +21,21 @@ const ctaStyle = style({
   marginBottom: '-.5em'
 })
 
-export default () =>
-  <Layout.Row justifyContent='center' {...intersectStyle}>
-    <Layout.Column md={9}>
-      <div {...subscribeStyle}>
-        <div {...ctaStyle}>
-          <div dangerouslySetInnerHTML={{ __html: '<div class="cf-cta-snippet cta6385" website-id="1535" cta-id="6385"></div>' }} />
-        </div>
-      </div>
-    </Layout.Column>
-  </Layout.Row>
+export default class extends React.Component {
+  render () {
+    return (
+      <Layout.Row justifyContent='center' {...intersectStyle}>
+        <Head>
+          <script async src='https://assets.convertflow.com/scripts/1535.js' />
+        </Head>
+        <Layout.Column md={9}>
+          <div {...subscribeStyle}>
+            <div {...ctaStyle}>
+              <div dangerouslySetInnerHTML={{ __html: '<div class="cf-cta-snippet cta6385" website-id="1535" cta-id="6385"></div>' }} />
+            </div>
+          </div>
+        </Layout.Column>
+      </Layout.Row>
+    )
+  }
+}
