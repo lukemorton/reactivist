@@ -6,8 +6,8 @@ import { Page } from '../../components/Layout'
 
 export default app.page(() =>
   <Page>
-    <Head title="Reactivist" />
+    <Head title="Reactivist Articles" />
     <Header />
-    <h1>Welcome</h1>
+    <h1>Articles</h1>
   </Page>
 )
