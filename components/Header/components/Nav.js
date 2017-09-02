@@ -15,7 +15,7 @@ const navStyle = style({
 export default () =>
   <nav {...navStyle}>
     <Link action='home#index'>
-      <a>Intro</a>
+      <a>Subscribe</a>
     </Link>
 
     <Link action='articles#index'>
