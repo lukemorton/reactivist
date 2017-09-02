@@ -10,7 +10,10 @@ const subscribeStyle = style({
 })
 
 const intersectStyle = style({
-  marginTop: '-9em'
+  marginTop: '-4em',
+  '@media (min-width: 768px)': {
+    marginTop: '-9em'
+  }
 })
 
 const ctaStyle = style({

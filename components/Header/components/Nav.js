@@ -8,7 +8,10 @@ const navStyle = style({
     color: purple('white'),
     letterSpacing: '1.1',
     paddingLeft: '1em',
-    paddingRight: '1em'
+    paddingRight: '1em',
+    '&:hover': {
+      color: 'white'
+    }
   },
   '@media (min-width: 768px)': {
     textAlign: 'right',

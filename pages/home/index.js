@@ -13,11 +13,11 @@ export default app.page(() =>
 
     <Content>
       <Content.ReadingColumn>
-        <h2>Getting Started</h2>
+        <h3>Getting Started</h3>
       </Content.ReadingColumn>
 
       <Content.ReadingAside>
-        <h4>Want to help?</h4>
+        <h3>Want to help?</h3>
 
         <p>We would love for you to help out with knowledge and content.</p>
 
