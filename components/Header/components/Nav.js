@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'republic/react'
+import { style } from 'glamor'
+
+const navStyle = style({
+  textAlign: 'right',
+  '& a': {
+    paddingLeft: '3em'
+  }
+})
 
 export default () =>
-  <nav>
+  <nav {...navStyle}>
     <Link action='home#index'>
       <a>Intro</a>
     </Link>
