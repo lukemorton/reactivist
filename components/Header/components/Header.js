@@ -9,7 +9,8 @@ const headerStyle = style({
   background: purple(),
   borderBottom: purple('dark'),
   overflow: 'hidden',
-  height: '4em'
+  height: '4em',
+  textShadow: '0 1px 2px rgba(0,0,0,.2)'
 })
 
 const jumboHeaderStyle = style(headerStyle, {

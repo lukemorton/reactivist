@@ -8,8 +8,7 @@ const navStyle = style({
   '& a': {
     color: purple('white'),
     letterSpacing: '1.1',
-    paddingLeft: '2em',
-    textShadow: '0 1px 2px rgba(0,0,0,.2)'
+    paddingLeft: '2em'
   }
 })
 
