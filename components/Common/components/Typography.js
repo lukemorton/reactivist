@@ -3,8 +3,11 @@ import { style } from 'glamor'
 
 const typography = style({
   fontFamily: 'sans-serif',
-  fontSize: '18px',
+  fontSize: '14px',
   lineHeight: '1.5',
+  '@media (min-width: 768px)': {
+    fontSize: '18px',
+  },
   '& h1, & h2, & h3, & h4': {
     margin: '0',
     paddingTop: '1em'
