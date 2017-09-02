@@ -4,11 +4,18 @@ import { style } from 'glamor'
 import { purple } from '../../Common/colors'
 
 const navStyle = style({
-  textAlign: 'right',
   '& a': {
     color: purple('white'),
     letterSpacing: '1.1',
-    paddingLeft: '2em'
+    paddingLeft: '1em',
+    paddingRight: '1em'
+  },
+  '@media (min-width: 768px)': {
+    textAlign: 'right',
+    '& a': {
+      paddingLeft: '2em',
+      paddingRight: '0'
+    }
   }
 })
 

@@ -8,13 +8,21 @@ import Nav from './Nav'
 const headerStyle = style({
   background: purple(),
   borderBottom: purple('dark'),
+  height: '9em',
   overflow: 'hidden',
-  height: '4em',
-  textShadow: '0 1px 2px rgba(0,0,0,.2)'
+  textAlign: 'center',
+  textShadow: '0 1px 2px rgba(0,0,0,.2)',
+  '@media (min-width: 768px)': {
+    height: '4em',
+    textAlign: 'left'
+  }
 })
 
 const jumboHeaderStyle = style(headerStyle, {
-  height: 'auto'
+  height: 'auto',
+  '@media (min-width: 768px)': {
+    height: 'auto',
+  }
 })
 
 const backgroundStyle = style({
