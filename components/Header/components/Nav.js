@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'republic/react'
 import { style } from 'glamor'
+import { purple } from '../../Common/colors'
 
 const navStyle = style({
   textAlign: 'right',
   '& a': {
-    paddingLeft: '3em'
+    color: purple('white'),
+    letterSpacing: '1.1',
+    paddingLeft: '2em',
+    textShadow: '0 1px 2px rgba(0,0,0,.2)'
   }
 })
 

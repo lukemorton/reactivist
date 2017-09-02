@@ -2,8 +2,9 @@ import React from 'react'
 import { style } from 'glamor'
 
 const brandingStyle = style({
-  fontWeight: 'strong',
-  letterSpacing: '.05em',
+  color: 'white',
+  letterSpacing: '1.4',
+  textShadow: '0 1px 2px rgba(0,0,0,.2)',
   textTransform: 'uppercase'
 })
 
