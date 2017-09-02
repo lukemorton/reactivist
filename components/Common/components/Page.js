@@ -7,13 +7,13 @@ if (typeof window !== 'undefined') {
 
 import 'glamor/reset'
 import { Head, Typography } from '../../Common'
-import { Header } from '../../Header'
+import { Header as DefaultHeader } from '../../Header'
 
-export default ({ title, children }) =>
+export default ({ title, header, children }) =>
   <main>
     <Typography>
       <Head title={title} />
-      <Header />
+      {header ? header : <DefaultHeader />}
       {children}
     </Typography>
   </main>

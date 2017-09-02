@@ -17,4 +17,7 @@ Content.Title = ({ children }) =>
 Content.ReadingColumn = ({ children }) =>
   <Layout.Column md={9}>{children}</Layout.Column>
 
+Content.ReadingAside = ({ children }) =>
+  <Layout.Column md={3}>{children}</Layout.Column>
+
 export default Content
