@@ -1,13 +1,9 @@
 import React from 'react'
 import app from '../../src/app'
-import { Head } from '../../components/Common'
-import { Header } from '../../components/Header'
-import { Page } from '../../components/Layout'
+import { Page } from '../../components/Page'
 
 export default app.page(() =>
-  <Page>
-    <Head title="Reactivist" />
-    <Header />
+  <Page title="Reactivist">
     <h1>Welcome</h1>
   </Page>
 )
