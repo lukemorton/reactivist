@@ -8,11 +8,17 @@ if (typeof window !== 'undefined') {
 import 'glamor/reset'
 import { Head, Typography } from '../../Common'
 import { Header as DefaultHeader } from '../../Header'
-import { purple } from '../../Common/colors'
+import { blue, purple } from '../../Common/colors'
 
 const mainStyle = style({
   background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
-  color: purple('black')
+  color: purple('black'),
+  '& p a': {
+    color: blue()
+  },
+  '& p a:hover, & p a:focus': {
+    color: blue('60%')
+  }
 })
 
 export default ({ title, header, children }) =>
