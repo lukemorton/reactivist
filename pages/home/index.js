@@ -17,7 +17,6 @@ export default app.page(() =>
       </Content.ReadingColumn>
 
       <Content.ReadingAside>
-        Factoid
       </Content.ReadingAside>
     </Content>
   </Page>
