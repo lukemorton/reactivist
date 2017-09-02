@@ -11,7 +11,7 @@ import { Header as DefaultHeader } from '../../Header'
 import { purple } from '../../Common/colors'
 
 const mainStyle = style({
-  background: purple('white'),
+  background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
   color: purple('black')
 })
 

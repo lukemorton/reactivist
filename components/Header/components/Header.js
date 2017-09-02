@@ -6,8 +6,7 @@ import Branding from './Branding'
 import Nav from './Nav'
 
 const headerStyle = style({
-  background: purple(),
-  boxShadow: '0 0 8px rgba(0,0,0, .2)',
+  boxShadow: '0 1px 6px rgba(0,0,0, .4)',
   height: '9em',
   overflow: 'hidden',
   textAlign: 'center',
@@ -26,7 +25,8 @@ const jumboHeaderStyle = style(headerStyle, {
 })
 
 const backgroundStyle = style({
-  background: 'linear-gradient(160deg, #673ab6 0%,#db4437 100%)',
+  background: 'url(/static/images/az-subtle.png), linear-gradient(160deg, #673ab6 0%,#009688 100%)',
+  backgroundAttachment: 'fixed',
   minHeight: '28em',
   paddingBottom: '2em'
 })
