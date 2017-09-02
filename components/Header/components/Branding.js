@@ -1,13 +1,15 @@
 import React from 'react'
 import { style } from 'glamor'
+import { Link } from 'republic/react'
+import { Logo } from '../../Common'
 
-const brandingStyle = style({
-  color: 'white',
-  letterSpacing: '1.4',
-  textTransform: 'uppercase'
+const anchorStyle = style({
+  textDecoration: 'none'
 })
 
 export default () =>
-  <div {...brandingStyle}>
-    Reactivist
-  </div>
+  <Link action='home#index'>
+    <a {...anchorStyle}>
+      <Logo />
+    </a>
+  </Link>
