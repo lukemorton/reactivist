@@ -7,13 +7,17 @@ const subscribeStyle = style({
   background: 'white',
   borderRadius: '.2em',
   boxShadow: '0 0 8px rgba(0,0,0, .1)',
-  padding: '1.8em 3em'
+  minHeight: '11.5em',
+  padding: '1.8em 1.2em',
+  '@media (min-width: 768px)': {
+    padding: '1.8em 3em'
+  }
 })
 
 const intersectStyle = style({
-  marginTop: '-4em',
+  marginTop: '-9em',
   '@media (min-width: 768px)': {
-    marginTop: '-9em'
+    marginTop: '-12em',
   }
 })
 

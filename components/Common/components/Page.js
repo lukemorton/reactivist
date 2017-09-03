@@ -13,11 +13,13 @@ import { blue, purple } from '../../Common/colors'
 const mainStyle = style({
   background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
   color: purple('black'),
-  '& p a': {
-    color: blue()
-  },
-  '& p a:hover, & p a:focus': {
-    color: blue('60%')
+  '& p, & li': {
+    '& a': {
+      color: blue()
+    },
+    '& a:hover, & a:focus': {
+      color: blue('60%')
+    }
   }
 })
 

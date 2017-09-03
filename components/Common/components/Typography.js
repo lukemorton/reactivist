@@ -5,24 +5,19 @@ const typography = style({
   fontFamily: 'Roboto, sans-serif',
   fontSize: '14px',
   lineHeight: '1.5',
-  '& h1, & h2, & h3, & h4': {
+  '& h1, & h2, & h3, & h4, & p, & ul': {
     margin: '0',
-    paddingTop: '.5em'
+    paddingTop: '1.5em'
   },
-  '& h1:first-child, & h2:first-child, & h3:first-child, & h4:first-child': {
+  '& h1:first-child, & h2:first-child, & h3:first-child, & h4:first-child, & p:first-child, & ul:first-child': {
     paddingTop: '0'
   },
   '& h1': { fontSize: '2.8em' },
   '& h2': { fontSize: '2.0em' },
-  '& h3': { fontSize: '1.2em' },
-  '& h4': { fontSize: '1.1em' },
-  '& p': {
+  '& h3': { fontSize: '1.4em' },
+  '& h4': { fontSize: '1.2em' },
+  '& p, & ul': {
     fontSize: '1.2em',
-    margin: '0',
-    paddingTop: '1.5em'
-  },
-  '& p:first-child': {
-    paddingTop: '0'
   },
   '@media (min-width: 768px)': {
     fontSize: '18px',
@@ -34,7 +29,7 @@ const typography = style({
       margin: '0',
       paddingTop: '1em'
     },
-    '& p': {
+    '& p, & ul': {
       fontSize: '1em'
     }
   }

@@ -1,7 +1,7 @@
 function lightnessToPercent(lightness) {
   switch (lightness) {
     case 'black':
-      return '5%'
+      return '10%'
     case 'dark':
       return '30%'
     case 'normal':
@@ -19,4 +19,4 @@ export const purple = (lightness = 'normal') =>
   `hsl(262, 52%, ${lightnessToPercent(lightness)})`
 
 export const blue = (lightness = 'normal') =>
-  `hsl(220, 80%, ${lightnessToPercent(lightness)})`
+  `hsl(220, 52%, ${lightnessToPercent(lightness)})`

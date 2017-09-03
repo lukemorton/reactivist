@@ -9,18 +9,16 @@ const introductionStyle = style({
   letterSpacing: '1.3',
   textAlign: 'center',
   '& h2': {
-    paddingTop: '.5em',
     fontWeight: 'normal'
   },
   '@media (min-width: 768px)': {
-    paddingTop: '1em'
+    paddingTop: '3em',
   }
 })
 
 export default () =>
   <Layout.Row {...introductionStyle} justifyContent='center'>
     <Layout.Column md={11.5}>
-      <h1><Logo /></h1>
       <h2>We find, develop, and share best practice knowledge in the React community</h2>
     </Layout.Column>
   </Layout.Row>

@@ -25,7 +25,7 @@ const jumboHeaderStyle = style(headerStyle, {
 })
 
 const backgroundStyle = style({
-  background: 'url(/static/images/az-subtle.png), linear-gradient(160deg, #673ab6 0%,#009688 100%)',
+  background: 'url(/static/images/az-subtle.png), linear-gradient(160deg, #673ab6 0%,#00bcd4 100%)',
   backgroundAttachment: 'fixed',
   minHeight: '28em',
   paddingBottom: '2em'
@@ -35,11 +35,11 @@ export default ({ jumbo }) =>
   <div {...(jumbo ? jumboHeaderStyle : headerStyle)}>
     <div {...backgroundStyle}>
       <Layout.Row>
-        <Layout.Column md={6}>
+        <Layout.Column md={4}>
           <Branding />
         </Layout.Column>
 
-        <Layout.Column md={6}>
+        <Layout.Column md={8}>
           <Nav />
         </Layout.Column>
       </Layout.Row>

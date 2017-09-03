@@ -29,10 +29,14 @@ export default () =>
     </Link>
 
     <Link action='articles#index'>
-      <a>Articles</a>
+      <a>Latest</a>
+    </Link>
+
+    <Link action='articles#index'>
+      <a>Collections</a>
     </Link>
 
     <Link action='help#index'>
-      <a>Getting Help</a>
+      <a>Help</a>
     </Link>
   </nav>
