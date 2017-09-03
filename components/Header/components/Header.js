@@ -1,11 +1,12 @@
 import React from 'react'
 import { style } from 'glamor'
 import { Layout } from '../../Common'
+import { green, purple } from '../../Common/colors'
 import Branding from './Branding'
 import Nav from './Nav'
 
 const headerStyle = style({
-  boxShadow: '0 1px 6px rgba(0,0,0, .4)',
+  boxShadow: '0 1px 8px rgba(0,0,0, .4)',
   height: '9em',
   overflow: 'hidden',
   textAlign: 'center',
@@ -32,7 +33,7 @@ const jumboHeaderStyle = style(headerStyle, {
 })
 
 const backgroundStyle = style({
-  background: 'url(/static/images/az-subtle.png), linear-gradient(160deg, #673ab6 0%,#00bcd4 100%)',
+  background: `url(/static/images/az-subtle.png), linear-gradient(160deg, ${purple()} 0%, ${green()} 100%)`,
   backgroundAttachment: 'fixed',
   minHeight: '28em',
   paddingBottom: '2em'
