@@ -1,9 +1,14 @@
 import React from 'react'
 import { style } from 'glamor'
 import * as Layout from './Layout'
+import Card from './Card'
 
 const contentStyle = style({
   paddingBottom: '2em'
+})
+
+const titleStyle = style({
+  textAlign: 'center'
 })
 
 const Content = ({ children }) =>
@@ -13,73 +18,37 @@ const Content = ({ children }) =>
     </Layout.Row>
   </div>
 
-const titleStyle = style({
-  textAlign: 'center'
-})
-
 Content.Title = ({ children }) =>
   <Layout.Row justifyContent='center' {...titleStyle}>
     <Layout.Column md={10}>{children}</Layout.Column>
   </Layout.Row>
 
-const raisedStyle = style({
-  background: 'white',
-  borderRadius: '.2em',
-  boxShadow: '0 0 8px rgba(0,0,0, .03)',
-  padding: '1.5em',
-  '@media (min-width: 768px)': {
-    marginTop: '0em'
-  }
-})
-
-const readingPageStyle = style(raisedStyle, {
-  paddingBottom: '3em'
-})
-
-const readingPageTitleStyle = style({
-  padding: '0em',
-  textAlign: 'center',
-  '@media (min-width: 768px)': {
-    padding: '2em'
-  }
-})
-
-const readingPageContentStyle = style({
-  padding: '0 1em',
-  '@media (min-width: 768px)': {
-    padding: '0 6em'
-  }
-})
-
 Content.ReadingPage = ({ title, children }) =>
   <Layout.Column md={11}>
-    <div {...readingPageStyle}>
-      <div {...readingPageTitleStyle}>
+    <Card>
+      <div>
         {title}
       </div>
 
-      <div {...readingPageContentStyle}>
+      <div>
         {children}
       </div>
-    </div>
+    </Card>
   </Layout.Column>
-
-const readingColumnStyle = style(raisedStyle)
 
 Content.ReadingColumn = ({ children }) =>
   <Layout.Column md={8}>
-    <div {...readingColumnStyle}>
+    <Card>
       {children}
-    </div>
+    </Card>
   </Layout.Column>
 
-const readingAsideStyle = style(raisedStyle)
 
 Content.ReadingAside = ({ children }) =>
   <Layout.Column md={4}>
-    <div {...readingAsideStyle}>
+    <Card>
       {children}
-    </div>
+    </Card>
   </Layout.Column>
 
 export default Content
