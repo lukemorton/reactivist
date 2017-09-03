@@ -1,6 +1,6 @@
 import React from 'react'
 import { style } from 'glamor'
-import { Logo, Layout } from '../../Common'
+import { Layout } from '../../Common'
 import { purple } from '../../Common/colors'
 
 const introductionStyle = style({
