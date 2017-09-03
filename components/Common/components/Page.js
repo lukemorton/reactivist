@@ -9,9 +9,10 @@ import { blue, purple } from '../../Common/colors'
 const mainStyle = style({
   background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
   color: purple('black'),
-  '& p, & li': {
+  '& h1, & h2, & h3, & h4, & p, & li': {
     '& a': {
-      color: blue()
+      color: blue(),
+      transition: 'color .2s'
     },
     '& a:hover, & a:focus': {
       color: blue('60%')
