@@ -6,12 +6,14 @@ import { purple } from '../../Common/colors'
 const introductionStyle = style({
   color: purple('white'),
   fontFamily: '"Roboto Condensed", sans-serif',
+  fontSize: '.8em',
   letterSpacing: '1.3',
   textAlign: 'center',
   '& h2': {
     fontWeight: 'normal'
   },
   '@media (min-width: 768px)': {
+    fontSize: '1em',
     paddingTop: '2em'
   }
 })
