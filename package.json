@@ -4,7 +4,7 @@
     "build": "next build && babel bin/ -d dist/bin/ && babel src/ -d dist/src/",
     "start": "NODE_ENV=production node dist/bin/start.js",
     "dev": "NODE_ENV=development nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
-    "test": "standard && jest --notify",
+    "test": "standard && jest",
     "deploy": "now && now alias"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "jest": "^20.0.4",
     "nodemon": "^1.11.0",
     "now": "^7.4.0",
     "standard": "^10.0.3"
@@ -40,5 +41,8 @@
   },
   "now": {
     "alias": "reactivist.co"
+  },
+  "standard": {
+    "globals": ["describe", "it"]
   }
 }
