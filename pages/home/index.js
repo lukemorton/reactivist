@@ -13,7 +13,7 @@ export default app.page(() =>
 
     <Content>
       <Content.ReadingColumn>
-        <h3>Getting Started</h3>
+        <h2>Getting Started</h2>
 
         <p>Knowing where to start with React is a common problem. We have put together resources to help teams and individuals get started.</p>
 
@@ -25,7 +25,7 @@ export default app.page(() =>
 
         <p>You can find more beginner guides in our <a href='#'>Getting Started</a> collection.</p>
 
-        <h3>Best Practice</h3>
+        <h2>Best Practice</h2>
 
         <p>There isn't a lot of writing on Best Practice in React. We have put some ideas down.</p>
 

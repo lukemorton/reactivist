@@ -6,6 +6,7 @@ import { purple } from '../../Common/colors'
 const introductionStyle = style({
   color: purple('white'),
   fontFamily: '"Roboto Condensed", sans-serif',
+  fontSize: '1.2em',
   letterSpacing: '1.3',
   textAlign: 'center',
   '& h2': {

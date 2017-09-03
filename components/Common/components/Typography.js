@@ -13,7 +13,7 @@ const typography = style({
     paddingTop: '0'
   },
   '& h1': { fontSize: '2.8em' },
-  '& h2': { fontSize: '2.0em' },
+  '& h2': { fontSize: '1.8em' },
   '& h3': { fontSize: '1.4em' },
   '& h4': { fontSize: '1.2em' },
   '& p, & ul': {
@@ -22,7 +22,7 @@ const typography = style({
   '@media (min-width: 768px)': {
     fontSize: '18px',
     '& h1': { fontSize: '3em' },
-    '& h2': { fontSize: '2.2em' },
+    '& h2': { fontSize: '1.8em' },
     '& h3': { fontSize: '1.4em' },
     '& h4': { fontSize: '1.2em' },
     '& h1, & h2, & h3, & h4': {
