@@ -5,7 +5,7 @@
     "start": "NODE_ENV=production node dist/bin/start.js",
     "dev": "NODE_ENV=development nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
     "test": "standard && jest",
-    "deploy": "now && now alias"
+    "deploy": "now -t $NOW_TOKEN && now alias -t $NOW_TOKEN"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
