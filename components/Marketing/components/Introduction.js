@@ -6,20 +6,19 @@ import { purple } from '../../Common/colors'
 const introductionStyle = style({
   color: purple('white'),
   fontFamily: '"Roboto Condensed", sans-serif',
-  fontSize: '1.2em',
   letterSpacing: '1.3',
   textAlign: 'center',
   '& h2': {
     fontWeight: 'normal'
   },
   '@media (min-width: 768px)': {
-    paddingTop: '3em'
+    paddingTop: '2em'
   }
 })
 
 export default () =>
   <Layout.Row {...introductionStyle} justifyContent='center'>
     <Layout.Column md={11.5}>
-      <h2>We find, develop, and share best practice knowledge in the React community</h2>
+      <h1>We find, develop, and share best practice knowledge in the React community</h1>
     </Layout.Column>
   </Layout.Row>

@@ -1,11 +1,13 @@
 import React from 'react'
 import app from '../../src/app'
-import { Page, Content } from '../../components/Common'
+import { Card, Content, Layout, Page } from '../../components/Common'
 import { Header } from '../../components/Header'
 import { Introduction, Subscribe } from '../../components/Marketing'
 
 const JumboHeader = () =>
-  <Header jumbo={<Introduction />} />
+  <Header jumbo>
+    <Introduction />
+  </Header>
 
 export default app.page(() =>
   <Page title='Reactivist' header={<JumboHeader />}>
@@ -36,15 +38,13 @@ export default app.page(() =>
         </ul>
 
         <p>You can find more expert advice in our <a href='#'>Best Practice</a> collection.</p>
-      </Content.ReadingColumn>
 
-      <Content.ReadingAside>
-        <h3>Want to help us?</h3>
+        <h2>Want to help us?</h2>
 
         <p>We would love for you to help out with knowledge and content.</p>
 
         <p>Get in touch with Luke on <a href='https://twitter.com/LukeMorton'>Twitter</a> or <a href='https://github.com/lukemorton/reactivist'>GitHub</a></p>
-      </Content.ReadingAside>
+      </Content.ReadingColumn>
     </Content>
   </Page>
 )

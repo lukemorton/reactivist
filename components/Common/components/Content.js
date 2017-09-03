@@ -38,17 +38,12 @@ Content.ReadingPage = ({ title, children }) =>
 
 Content.ReadingColumn = ({ children }) =>
   <Layout.Column md={8}>
-    <Card>
-      {children}
-    </Card>
+    {children}
   </Layout.Column>
-
 
 Content.ReadingAside = ({ children }) =>
   <Layout.Column md={4}>
-    <Card>
-      {children}
-    </Card>
+    {children}
   </Layout.Column>
 
 export default Content

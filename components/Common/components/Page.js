@@ -9,7 +9,13 @@ import { blue, purple } from '../../Common/colors'
 const mainStyle = style({
   background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
   color: purple('black'),
-  '& h1, & h2, & h3, & h4, & p, & li': {
+  '& h1, & h2, & h3, & h4': {
+    '& a': {
+      color: purple('black'),
+      textDecoration: 'none'
+    }
+  },
+  '& p, & li': {
     '& a': {
       color: blue(),
       transition: 'color .2s'

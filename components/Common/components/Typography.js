@@ -21,14 +21,6 @@ const typography = style({
   },
   '@media (min-width: 768px)': {
     fontSize: '18px',
-    '& h1': { fontSize: '3em' },
-    '& h2': { fontSize: '1.8em' },
-    '& h3': { fontSize: '1.4em' },
-    '& h4': { fontSize: '1.2em' },
-    '& h1, & h2, & h3, & h4': {
-      margin: '0',
-      paddingTop: '1em'
-    },
     '& p, & ul': {
       fontSize: '1em'
     }

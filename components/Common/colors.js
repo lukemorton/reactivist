@@ -16,7 +16,7 @@ function lightnessToPercent (lightness) {
 }
 
 export const purple = (lightness = 'normal') =>
-  `hsl(262, 52%, ${lightnessToPercent(lightness)})`
+  `hsl(262, 70%, ${lightnessToPercent(lightness)})`
 
 export const blue = (lightness = 'normal') =>
-  `hsl(220, 52%, ${lightnessToPercent(lightness)})`
+  `hsl(220, 70%, ${lightnessToPercent(lightness)})`

@@ -16,6 +16,14 @@ const headerStyle = style({
   }
 })
 
+const titledHeaderStyle = style(headerStyle, {
+  height: '14em',
+  marginBottom: '2em',
+  '@media (min-width: 768px)': {
+    height: '10em'
+  }
+})
+
 const jumboHeaderStyle = style(headerStyle, {
   height: 'auto',
   '@media (min-width: 768px)': {
@@ -30,8 +38,18 @@ const backgroundStyle = style({
   paddingBottom: '2em'
 })
 
-export default ({ jumbo }) =>
-  <div {...(jumbo ? jumboHeaderStyle : headerStyle)}>
+function buildProps (titled, jumbo) {
+  if (jumbo) {
+    return { ...jumboHeaderStyle }
+  } else if (titled) {
+    return { ...titledHeaderStyle }
+  } else {
+    return { ...headerStyle }
+  }
+}
+
+export default ({ titled, jumbo, children }) =>
+  <div {...buildProps(titled, jumbo)}>
     <div {...backgroundStyle}>
       <Layout.Row>
         <Layout.Column md={4}>
@@ -43,6 +61,6 @@ export default ({ jumbo }) =>
         </Layout.Column>
       </Layout.Row>
 
-      {jumbo}
+      {children}
     </div>
   </div>
