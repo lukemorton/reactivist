@@ -3,7 +3,7 @@ import app from '../../src/app'
 import { Content, Page } from '../../components/Common'
 
 export default app.page(() =>
-  <Page title="Reactivist Help">
+  <Page title='Reactivist Help'>
     <Content>
       <Content.ReadingColumn>
         <h1>Getting Help</h1>
@@ -14,7 +14,7 @@ export default app.page(() =>
 
         <p>We would love for you to help out with knowledge and content.</p>
 
-        <p>Get in touch with Luke on <a href="https://twitter.com/LukeMorton">Twitter</a> or <a href="https://github.com/lukemorton/reactivist">GitHub</a></p>
+        <p>Get in touch with Luke on <a href='https://twitter.com/LukeMorton'>Twitter</a> or <a href='https://github.com/lukemorton/reactivist'>GitHub</a></p>
       </Content.ReadingAside>
     </Content>
   </Page>

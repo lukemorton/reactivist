@@ -1,7 +1,6 @@
 import React from 'react'
 import { style } from 'glamor'
 import * as Layout from './Layout'
-import { purple } from '../colors'
 
 const contentStyle = style({
   paddingBottom: '2em'
@@ -30,7 +29,7 @@ const raisedStyle = style({
   marginTop: '-1em',
   padding: '1.5em',
   '@media (min-width: 768px)': {
-    marginTop: '0em',
+    marginTop: '0em'
   }
 })
 

@@ -1,4 +1,4 @@
-function lightnessToPercent(lightness) {
+function lightnessToPercent (lightness) {
   switch (lightness) {
     case 'black':
       return '10%'

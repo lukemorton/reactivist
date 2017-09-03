@@ -1,7 +1,6 @@
 import React from 'react'
 import { style } from 'glamor'
 import { Layout } from '../../Common'
-import { purple } from '../../Common/colors'
 import Branding from './Branding'
 import Nav from './Nav'
 
@@ -20,7 +19,7 @@ const headerStyle = style({
 const jumboHeaderStyle = style(headerStyle, {
   height: 'auto',
   '@media (min-width: 768px)': {
-    height: 'auto',
+    height: 'auto'
   }
 })
 

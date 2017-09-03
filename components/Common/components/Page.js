@@ -1,11 +1,7 @@
 import React from 'react'
-import { style, rehydrate } from 'glamor'
-
-if (typeof window !== 'undefined') {
-  rehydrate(window.__NEXT_DATA__.ids)
-}
-
+import '../rehydrateGlamor'
 import 'glamor/reset'
+import { style } from 'glamor'
 import { Head, Typography } from '../../Common'
 import { Header as DefaultHeader } from '../../Header'
 import { blue, purple } from '../../Common/colors'
@@ -27,7 +23,7 @@ export default ({ title, header, children }) =>
   <main {...mainStyle}>
     <Typography>
       <Head title={title} />
-      {header ? header : <DefaultHeader />}
+      {header || <DefaultHeader />}
       {children}
     </Typography>
   </main>

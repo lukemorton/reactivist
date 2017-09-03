@@ -12,7 +12,7 @@ const introductionStyle = style({
     fontWeight: 'normal'
   },
   '@media (min-width: 768px)': {
-    paddingTop: '3em',
+    paddingTop: '3em'
   }
 })
 

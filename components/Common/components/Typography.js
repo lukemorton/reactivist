@@ -17,7 +17,7 @@ const typography = style({
   '& h3': { fontSize: '1.4em' },
   '& h4': { fontSize: '1.2em' },
   '& p, & ul': {
-    fontSize: '1.2em',
+    fontSize: '1.2em'
   },
   '@media (min-width: 768px)': {
     fontSize: '18px',
