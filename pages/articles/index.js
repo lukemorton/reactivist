@@ -40,7 +40,7 @@ export default app.page(() =>
         </p>
 
         <p>
-          <small><em>Written 3 days ago by Luke in <a href="#">Getting Started</a></em></small>
+          <small><em>Written 3 days ago by Luke in <a href='#'>Getting Started</a></em></small>
         </p>
 
         <Hr />
@@ -61,7 +61,7 @@ export default app.page(() =>
         </p>
 
         <p>
-          <small><em>Written 8 days ago by Luke in <a href="#">Teams</a> and <a href="#">Getting Started</a></em></small>
+          <small><em>Written 8 days ago by Luke in <a href='#'>Teams</a> and <a href='#'>Getting Started</a></em></small>
         </p>
 
         <Hr />
@@ -88,7 +88,7 @@ export default app.page(() =>
         </p>
 
         <p>
-          <small><em>Written 2 weeks ago by Luke in <a href="#">Examples</a></em></small>
+          <small><em>Written 2 weeks ago by Luke in <a href='#'>Examples</a></em></small>
         </p>
 
         <Hr />
@@ -107,7 +107,7 @@ export default app.page(() =>
         </p>
 
         <p>
-          <small><em>Written 3 weeks ago by Luke in <a href="#">Testing</a></em></small>
+          <small><em>Written 3 weeks ago by Luke in <a href='#'>Testing</a></em></small>
         </p>
 
         <Hr />

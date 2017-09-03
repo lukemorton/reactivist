@@ -6,7 +6,7 @@ const hrStyle = style({
   border: '0',
   borderTop: `1px solid ${purple('90%')}`,
   margin: '0',
-  marginTop: '3em',
+  marginTop: '3em'
 })
 
 export default () =>

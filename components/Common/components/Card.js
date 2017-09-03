@@ -8,7 +8,7 @@ const cardStyle = style({
   marginTop: '3em',
   padding: '1.5em',
   '&:first-child': {
-    marginTop: '0',
+    marginTop: '0'
   }
 })
 

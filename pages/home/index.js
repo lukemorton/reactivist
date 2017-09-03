@@ -1,6 +1,6 @@
 import React from 'react'
 import app from '../../src/app'
-import { Card, Content, Layout, Page } from '../../components/Common'
+import { Content, Page } from '../../components/Common'
 import { Header } from '../../components/Header'
 import { Introduction, Subscribe } from '../../components/Marketing'
 
