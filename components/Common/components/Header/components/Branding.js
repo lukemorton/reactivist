@@ -1,7 +1,7 @@
 import React from 'react'
 import { style } from 'glamor'
 import { Link } from 'republic/react'
-import { Logo } from '../../Common'
+import Logo from '../../Logo'
 
 const anchorStyle = style({
   textDecoration: 'none'

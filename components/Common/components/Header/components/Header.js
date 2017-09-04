@@ -1,7 +1,7 @@
 import React from 'react'
 import { style } from 'glamor'
-import { Layout } from '../../Common'
-import { green, purple } from '../../Common/colors'
+import * as Layout from '../../Layout'
+import { green, purple } from '../../../colors'
 import Branding from './Branding'
 import Nav from './Nav'
 

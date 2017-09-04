@@ -5,7 +5,7 @@ import { style } from 'glamor'
 import Head from './Head'
 import Tracking from './Tracking'
 import Typography from './Typography'
-import { Header as DefaultHeader } from '../../Header'
+import Header from './Header'
 import { blue, purple } from '../../Common/colors'
 
 const mainStyle = style({
@@ -32,7 +32,7 @@ export default ({ title, header, children }) =>
   <main {...mainStyle}>
     <Typography>
       <Head title={title} />
-      {header || <DefaultHeader />}
+      {header || <Header />}
       {children}
     </Typography>
 

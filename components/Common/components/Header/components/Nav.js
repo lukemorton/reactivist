@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'republic/react'
 import { style } from 'glamor'
-import { purple } from '../../Common/colors'
+import { purple } from '../../../colors'
 
 const baseNavStyle = style({
   '& a': {

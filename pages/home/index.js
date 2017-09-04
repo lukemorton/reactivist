@@ -1,7 +1,6 @@
 import React from 'react'
 import app from '../../src/app'
-import { Content, Page } from '../../components/Common'
-import { Header } from '../../components/Header'
+import { Content, Header, Page } from '../../components/Common'
 import { Introduction, Subscribe } from '../../components/Marketing'
 
 const JumboHeader = () =>
