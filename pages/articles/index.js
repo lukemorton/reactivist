@@ -59,13 +59,15 @@ export default app.page(() =>
 
         <Hr />
 
-        <Card relaxed>
-          <h3>Want to help?</h3>
+        <Content.Relaxed>
+          <Card>
+            <h3>Want to help?</h3>
 
-          <p>We would love for you to help out with knowledge and content.</p>
+            <p>We would love for you to help out with knowledge and content.</p>
 
-          <p>Get in touch with Luke on <a href='https://twitter.com/LukeMorton'>Twitter</a> or <a href='https://github.com/lukemorton/reactivist'>GitHub</a></p>
-        </Card>
+            <p>Get in touch with Luke on <a href='https://twitter.com/LukeMorton'>Twitter</a> or <a href='https://github.com/lukemorton/reactivist'>GitHub</a></p>
+          </Card>
+        </Content.Relaxed>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'example' }}>

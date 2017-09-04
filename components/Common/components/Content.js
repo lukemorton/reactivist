@@ -18,24 +18,6 @@ const Content = ({ children }) =>
     </Layout.Row>
   </div>
 
-Content.Title = ({ children }) =>
-  <Layout.Row justifyContent='center' {...titleStyle}>
-    <Layout.Column md={10}>{children}</Layout.Column>
-  </Layout.Row>
-
-Content.ReadingPage = ({ title, children }) =>
-  <Layout.Column md={11}>
-    <Card>
-      <div>
-        {title}
-      </div>
-
-      <div>
-        {children}
-      </div>
-    </Card>
-  </Layout.Column>
-
 Content.ReadingColumn = ({ children }) =>
   <Layout.Column md={8}>
     {children}
@@ -45,5 +27,10 @@ Content.ReadingAside = ({ children }) =>
   <Layout.Column md={4}>
     {children}
   </Layout.Column>
+
+Content.Relaxed = ({ children }) =>
+  <div style={{ margin: '0 -1.5em' }}>
+    {children}
+  </div>
 
 export default Content

@@ -12,10 +12,5 @@ const cardStyle = style({
   }
 })
 
-const relaxedCardStyle = style(cardStyle, {
-  marginLeft: '-1.5em',
-  marginRight: '-1.5em'
-})
-
 export default (props) =>
-  <div {...props} {...(props.relaxed ? relaxedCardStyle : cardStyle)} />
+  <div {...props} {...cardStyle} />
