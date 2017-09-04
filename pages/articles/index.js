@@ -4,20 +4,11 @@ import { style } from 'glamor'
 import app from '../../src/app'
 import { Card, Content, Hr, Page } from '../../components/Common'
 
-const titleStyle = style({
-  fontFamily: '"Roboto Condensed", sans-serif',
-  letterSpacing: '1.3',
-  textAlign: 'center',
-  '& h1': {
-    paddingTop: '0'
-  }
-})
-
 export default app.page(() =>
   <Page title='Reactivist Article'>
     <Content>
       <Content.ReadingColumn>
-        <div {...titleStyle}><h1>Latest Articles</h1></div>
+        <h1>Latest Articles</h1>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'example' }}>

@@ -6,9 +6,7 @@ export default app.page(() =>
   <Page title='Reactivist Article'>
     <Content>
       <Content.ReadingColumn>
-        <Content.Relaxed>
-          <h1>An approach to component directory structure</h1>
-        </Content.Relaxed>
+        <h1>An approach to component directory structure</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis ex neque, ut consequat lectus lobortis ornare. Curabitur finibus eget justo sit amet imperdiet. Curabitur malesuada nisl arcu, vel pellentesque tellus aliquam eu. Vestibulum id ex lacus. Vestibulum purus erat, dictum non risus vel, porta volutpat sapien. Integer diam tortor, rhoncus non hendrerit sit amet, dignissim in dui. Duis vitae imperdiet quam. Duis tempus, sem eu vulputate tincidunt, metus neque rutrum libero, quis volutpat risus lacus quis lectus. Aliquam ac ante pellentesque, malesuada ipsum vitae, tempor metus. Donec mollis justo ut mi laoreet, at laoreet dui pulvinar.</p>
 

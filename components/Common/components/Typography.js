@@ -12,7 +12,13 @@ const typography = style({
   '& h1:first-child, & h2:first-child, & h3:first-child, & h4:first-child, & p:first-child, & ul:first-child': {
     paddingTop: '0'
   },
-  '& h1': { fontSize: '2.8em' },
+  '& h1': {
+    fontSize: '2.8em',
+    fontFamily: '"Roboto Condensed", sans-serif',
+    letterSpacing: '1.3',
+    paddingTop: '0',
+    textAlign: 'center'
+  },
   '& h2': { fontSize: '1.8em' },
   '& h3': { fontSize: '1.4em' },
   '& h4': { fontSize: '1.2em' },
