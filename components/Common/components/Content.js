@@ -1,14 +1,9 @@
 import React from 'react'
 import { style } from 'glamor'
 import * as Layout from './Layout'
-import Card from './Card'
 
 const contentStyle = style({
   paddingBottom: '2em'
-})
-
-const titleStyle = style({
-  textAlign: 'center'
 })
 
 const Content = ({ children }) =>
