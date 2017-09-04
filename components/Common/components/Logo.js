@@ -2,13 +2,12 @@ import React from 'react'
 import { style } from 'glamor'
 
 const logoStyle = style({
-  color: 'white',
   fontSize: '1.2em',
   letterSpacing: '1.4',
   textTransform: 'uppercase'
 })
 
-export default () =>
-  <span {...logoStyle}>
+export default ({ color }) =>
+  <span {...logoStyle} style={{ color: color || 'black' }}>
     Reactivist
   </span>

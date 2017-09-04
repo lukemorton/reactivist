@@ -7,9 +7,9 @@ const anchorStyle = style({
   textDecoration: 'none'
 })
 
-export default () =>
+export default ({ jumbo }) =>
   <Link action='home#index'>
     <a {...anchorStyle}>
-      <Logo />
+      <Logo color={jumbo ? 'white' : 'black'} />
     </a>
   </Link>

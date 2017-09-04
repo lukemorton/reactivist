@@ -2,7 +2,9 @@ import React from 'react'
 import '../rehydrateGlamor'
 import 'glamor/reset'
 import { style } from 'glamor'
-import { Head, Typography } from '../../Common'
+import Head from './Head'
+import Tracking from './Tracking'
+import Typography from './Typography'
 import { Header as DefaultHeader } from '../../Header'
 import { blue, purple } from '../../Common/colors'
 
@@ -33,4 +35,6 @@ export default ({ title, header, children }) =>
       {header || <DefaultHeader />}
       {children}
     </Typography>
+
+    <Tracking />
   </main>

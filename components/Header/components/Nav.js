@@ -3,14 +3,14 @@ import { Link } from 'republic/react'
 import { style } from 'glamor'
 import { purple } from '../../Common/colors'
 
-const navStyle = style({
+const baseNavStyle = style({
   '& a': {
-    color: purple('white'),
     letterSpacing: '1.1',
     paddingLeft: '1em',
     paddingRight: '1em',
+    textDecoration: 'none',
     '&:hover': {
-      color: 'white'
+      textDecoration: 'underline'
     }
   },
   '@media (min-width: 768px)': {
@@ -22,8 +22,29 @@ const navStyle = style({
   }
 })
 
-export default () =>
-  <nav {...navStyle}>
+const regularNavStyle = style(baseNavStyle, {
+  '& a': {
+    color: purple('black'),
+    '&:hover': {
+      color: 'black'
+    }
+  }
+})
+
+const jumboNavStyle = style(baseNavStyle, {
+  '& a': {
+    color: purple('white'),
+    '&:hover': {
+      color: 'white'
+    }
+  }
+})
+
+const navStyle = (jumbo) =>
+  jumbo ? jumboNavStyle : regularNavStyle
+
+export default ({ jumbo }) =>
+  <nav {...navStyle(jumbo)}>
     <Link action='home#index'>
       <a>Subscribe</a>
     </Link>

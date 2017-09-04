@@ -5,8 +5,7 @@ import { green, purple } from '../../Common/colors'
 import Branding from './Branding'
 import Nav from './Nav'
 
-const headerStyle = style({
-  boxShadow: '0 1px 8px rgba(0,0,0, .4)',
+const baseHeaderStyle = style({
   height: '9em',
   overflow: 'hidden',
   textAlign: 'center',
@@ -17,15 +16,13 @@ const headerStyle = style({
   }
 })
 
-const titledHeaderStyle = style(headerStyle, {
-  height: '14em',
-  marginBottom: '2em',
-  '@media (min-width: 768px)': {
-    height: '10em'
-  }
+const regularHeaderStyle = style(baseHeaderStyle, {
+  borderBottom: `1px solid ${purple('90%')}`,
+  marginBottom: '1em',
+  marginTop: '.2em'
 })
 
-const jumboHeaderStyle = style(headerStyle, {
+const jumboHeaderStyle = style(baseHeaderStyle, {
   height: 'auto',
   '@media (min-width: 768px)': {
     height: 'auto'
@@ -35,30 +32,35 @@ const jumboHeaderStyle = style(headerStyle, {
 const backgroundStyle = style({
   background: `url(/static/images/az-subtle.png), linear-gradient(160deg, ${purple()} 0%, ${green()} 100%)`,
   backgroundAttachment: 'fixed',
-  minHeight: '28em',
-  paddingBottom: '2em'
+  boxShadow: '0 1px 8px rgba(0,0,0, .4)'
 })
 
-function buildProps (titled, jumbo) {
-  if (jumbo) {
-    return { ...jumboHeaderStyle }
-  } else if (titled) {
-    return { ...titledHeaderStyle }
-  } else {
-    return { ...headerStyle }
-  }
-}
+const regularHeaderBackgroundStyle = style(backgroundStyle, {
+  height: '.2em',
+  position: 'absolute',
+  top: 0,
+  width: '100%'
+})
+const jumboHeaderBackgroundStyle = style(backgroundStyle, {
+  minHeight: '28em'
+})
+
+const headerStyle = (jumbo) =>
+  jumbo ? jumboHeaderStyle : regularHeaderStyle
+
+const headerBackgroundStyle = (jumbo) =>
+  jumbo ? jumboHeaderBackgroundStyle : regularHeaderBackgroundStyle
 
 export default ({ titled, jumbo, children }) =>
-  <div {...buildProps(titled, jumbo)}>
-    <div {...backgroundStyle}>
+  <div {...headerStyle(jumbo)}>
+    <div {...headerBackgroundStyle(jumbo)}>
       <Layout.Row>
         <Layout.Column md={4}>
-          <Branding />
+          <Branding jumbo={jumbo} />
         </Layout.Column>
 
         <Layout.Column md={8}>
-          <Nav />
+          <Nav jumbo={jumbo} />
         </Layout.Column>
       </Layout.Row>
 

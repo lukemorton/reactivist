@@ -22,4 +22,4 @@ export const blue = (lightness = 'normal') =>
   `hsl(220, 70%, ${lightnessToPercent(lightness)})`
 
 export const green = (lightness = 'normal') =>
-  `#00bcd4`
+  `hsl(19, 100%, ${lightnessToPercent(lightness)})`

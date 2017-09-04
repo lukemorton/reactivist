@@ -3,29 +3,22 @@ import { Link } from 'republic/react'
 import { style } from 'glamor'
 import app from '../../src/app'
 import { Card, Content, Hr, Page } from '../../components/Common'
-import { Header } from '../../components/Header'
 
 const titleStyle = style({
   fontFamily: '"Roboto Condensed", sans-serif',
   letterSpacing: '1.3',
   textAlign: 'center',
   '& h1': {
-    color: 'white',
     paddingTop: '0'
   }
 })
 
-const JumboHeader = () =>
-  <Header titled>
-    <div {...titleStyle}>
-      <h1>Latest Articles</h1>
-    </div>
-  </Header>
-
 export default app.page(() =>
-  <Page title='Reactivist Article' header={<JumboHeader />}>
+  <Page title='Reactivist Article'>
     <Content>
       <Content.ReadingColumn>
+        <div {...titleStyle}><h1>Latest Articles</h1></div>
+
         <h2>
           <Link action='articles#show' params={{ slug: 'example' }}>
             First introduction to React
