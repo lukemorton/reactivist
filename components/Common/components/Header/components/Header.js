@@ -7,6 +7,7 @@ import Nav from './Nav'
 
 const baseHeaderStyle = style({
   height: '9em',
+  marginTop: '.2em',
   overflow: 'hidden',
   textAlign: 'center',
   textShadow: '0 1px 2px rgba(0,0,0,.2)',
@@ -18,15 +19,7 @@ const baseHeaderStyle = style({
 
 const regularHeaderStyle = style(baseHeaderStyle, {
   borderBottom: `1px solid ${purple('90%')}`,
-  marginBottom: '1em',
-  marginTop: '.2em'
-})
-
-const jumboHeaderStyle = style(baseHeaderStyle, {
-  height: 'auto',
-  '@media (min-width: 768px)': {
-    height: 'auto'
-  }
+  marginBottom: '1em'
 })
 
 const backgroundStyle = style({
@@ -35,35 +28,40 @@ const backgroundStyle = style({
   boxShadow: '0 1px 8px rgba(0,0,0, .4)'
 })
 
-const regularHeaderBackgroundStyle = style(backgroundStyle, {
+const jumboHeaderStyle = style(baseHeaderStyle, backgroundStyle, {
+  height: 'auto',
+  minHeight: '28em',
+  '@media (min-width: 768px)': {
+    height: 'auto'
+  }
+})
+
+const regularHeaderBarStyle = style(backgroundStyle, {
   height: '.2em',
   position: 'absolute',
   top: 0,
   width: '100%'
 })
-const jumboHeaderBackgroundStyle = style(backgroundStyle, {
-  minHeight: '28em'
-})
 
 const headerStyle = (jumbo) =>
   jumbo ? jumboHeaderStyle : regularHeaderStyle
 
-const headerBackgroundStyle = (jumbo) =>
-  jumbo ? jumboHeaderBackgroundStyle : regularHeaderBackgroundStyle
+const headerBarStyle = (jumbo) =>
+  jumbo ? {} : regularHeaderBarStyle
 
 export default ({ titled, jumbo, children }) =>
   <div {...headerStyle(jumbo)}>
-    <div {...headerBackgroundStyle(jumbo)}>
-      <Layout.Row>
-        <Layout.Column md={4}>
-          <Branding jumbo={jumbo} />
-        </Layout.Column>
+    <div {...headerBarStyle(jumbo)} />
 
-        <Layout.Column md={8}>
-          <Nav jumbo={jumbo} />
-        </Layout.Column>
-      </Layout.Row>
+    <Layout.Row>
+      <Layout.Column md={4}>
+        <Branding jumbo={jumbo} />
+      </Layout.Column>
 
-      {children}
-    </div>
+      <Layout.Column md={8}>
+        <Nav jumbo={jumbo} />
+      </Layout.Column>
+    </Layout.Row>
+
+    {children}
   </div>
