@@ -17,7 +17,7 @@ const baseHeaderStyle = style({
 })
 
 const regularHeaderStyle = style(baseHeaderStyle, {
-  boxShadow: '0 1px 8px rgba(0,0,0, .1)',
+  boxShadow: '0 1px 8px rgba(0,0,0, .03)',
   background: 'white',
   marginBottom: '1em'
 })
@@ -28,7 +28,7 @@ const backgroundStyle = style({
 })
 
 const jumboHeaderStyle = style(baseHeaderStyle, backgroundStyle, {
-  boxShadow: '0 1px 8px rgba(0,0,0, .4)',
+  boxShadow: '0 1px 8px rgba(0,0,0, .2)',
   height: 'auto',
   minHeight: '28em',
   '@media (min-width: 768px)': {
