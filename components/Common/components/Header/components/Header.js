@@ -6,7 +6,7 @@ import Branding from './Branding'
 import Nav from './Nav'
 
 const baseHeaderStyle = style({
-  height: '9em',
+  height: '7.5em',
   overflow: 'hidden',
   textAlign: 'center',
   textShadow: '0 1px 2px rgba(0,0,0,.2)',
@@ -48,6 +48,13 @@ const regularHeaderBarStyle = style(backgroundStyle, {
   width: '100%'
 })
 
+const navColumnStyle = style({
+  marginTop: '-20px',
+  '@media (min-width: 768px)': {
+    marginTop: '0',
+  }
+})
+
 const headerStyle = (jumbo) =>
   jumbo ? jumboHeaderStyle : regularHeaderStyle
 
@@ -67,7 +74,7 @@ export default ({ titled, jumbo, children }) =>
           <Branding jumbo={jumbo} />
         </Layout.Column>
 
-        <Layout.Column md={8}>
+        <Layout.Column md={8} {...navColumnStyle}>
           <Nav jumbo={jumbo} />
         </Layout.Column>
       </Layout.Row>

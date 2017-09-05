@@ -26,7 +26,7 @@ export default class extends React.Component {
         <Head>
           <script async src='https://assets.convertflow.com/scripts/1535.js' />
         </Head>
-        <Layout.Column md={9}>
+        <Layout.Column md={7}>
           <Card {...subscribeStyle}>
             <div {...ctaStyle}>
               <div dangerouslySetInnerHTML={{ __html: '<div class="cf-cta-snippet cta6385" website-id="1535" cta-id="6385"></div>' }} />

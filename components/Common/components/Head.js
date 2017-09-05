@@ -24,5 +24,5 @@ export default (props) =>
     <meta property='og:image' content={props.ogImage || defaultOGImage} />
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora|Open+Sans:300,400,700' />
   </NextHead>
