@@ -6,6 +6,7 @@ import { purple } from '../../../colors'
 const baseNavStyle = style({
   '& a': {
     letterSpacing: '1.1',
+    lineHeight: '1.7',
     paddingLeft: '1em',
     paddingRight: '1em',
     textDecoration: 'none',

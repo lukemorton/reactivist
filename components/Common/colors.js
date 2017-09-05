@@ -1,5 +1,5 @@
-function lightnessToPercent (lightness) {
-  switch (lightness) {
+function blendToLight (blend) {
+  switch (blend) {
     case 'black':
       return '10%'
     case 'dark':
@@ -11,15 +11,15 @@ function lightnessToPercent (lightness) {
     case 'white':
       return '95%'
     default:
-      return lightness
+      return blend
   }
 }
 
-export const purple = (lightness = 'normal') =>
-  `hsl(262, 70%, ${lightnessToPercent(lightness)})`
+export const purple = (blend = 'normal') =>
+  `hsl(262, 100%, ${blendToLight(blend)})`
 
-export const blue = (lightness = 'normal') =>
-  `hsl(220, 70%, ${lightnessToPercent(lightness)})`
+export const blue = (blend = 'normal') =>
+  `hsl(220, 70%, ${blendToLight(blend)})`
 
-export const green = (lightness = 'normal') =>
-  `hsl(19, 100%, ${lightnessToPercent(lightness)})`
+export const green = (blend = 'normal') =>
+  `hsl(19, 100%, ${blendToLight(blend)})`

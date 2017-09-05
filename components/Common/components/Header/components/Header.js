@@ -7,7 +7,6 @@ import Nav from './Nav'
 
 const baseHeaderStyle = style({
   height: '9em',
-  marginTop: '.2em',
   overflow: 'hidden',
   textAlign: 'center',
   textShadow: '0 1px 2px rgba(0,0,0,.2)',
@@ -18,22 +17,28 @@ const baseHeaderStyle = style({
 })
 
 const regularHeaderStyle = style(baseHeaderStyle, {
-  borderBottom: `1px solid ${purple('90%')}`,
+  boxShadow: '0 1px 8px rgba(0,0,0, .1)',
+  background: 'white',
   marginBottom: '1em'
 })
 
 const backgroundStyle = style({
-  background: `url(/static/images/az-subtle.png), linear-gradient(160deg, ${purple()} 0%, ${green()} 100%)`,
-  backgroundAttachment: 'fixed',
-  boxShadow: '0 1px 8px rgba(0,0,0, .4)'
+  background: `linear-gradient(160deg, ${purple()} 0%, ${green()} 100%)`,
+  backgroundAttachment: 'fixed'
 })
 
 const jumboHeaderStyle = style(baseHeaderStyle, backgroundStyle, {
+  boxShadow: '0 1px 8px rgba(0,0,0, .4)',
   height: 'auto',
   minHeight: '28em',
   '@media (min-width: 768px)': {
     height: 'auto'
   }
+})
+
+const jumboHeaderInnerStyle = style({
+  background: 'url(/static/images/react.png)',
+  minHeight: '28em',
 })
 
 const regularHeaderBarStyle = style(backgroundStyle, {
@@ -49,19 +54,24 @@ const headerStyle = (jumbo) =>
 const headerBarStyle = (jumbo) =>
   jumbo ? {} : regularHeaderBarStyle
 
+const headerInnerStyle = (jumbo) =>
+  jumbo ? jumboHeaderInnerStyle : {}
+
 export default ({ titled, jumbo, children }) =>
   <div {...headerStyle(jumbo)}>
     <div {...headerBarStyle(jumbo)} />
 
-    <Layout.Row>
-      <Layout.Column md={4}>
-        <Branding jumbo={jumbo} />
-      </Layout.Column>
+    <div {...headerInnerStyle(jumbo)}>
+      <Layout.Row>
+        <Layout.Column md={4}>
+          <Branding jumbo={jumbo} />
+        </Layout.Column>
 
-      <Layout.Column md={8}>
-        <Nav jumbo={jumbo} />
-      </Layout.Column>
-    </Layout.Row>
+        <Layout.Column md={8}>
+          <Nav jumbo={jumbo} />
+        </Layout.Column>
+      </Layout.Row>
 
-    {children}
+      {children}
+    </div>
   </div>
