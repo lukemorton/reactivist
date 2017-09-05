@@ -9,7 +9,7 @@ function blendToLight (blend) {
     case 'light':
       return '70%'
     case 'white':
-      return '95%'
+      return '98%'
     default:
       return blend
   }
