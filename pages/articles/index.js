@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'republic/react'
-import { style } from 'glamor'
 import app from '../../src/app'
 import { Card, Content, Hr, Page } from '../../components/Common'
 

@@ -26,7 +26,7 @@ const typography = style({
   '& h4': { fontSize: '1.2em' },
   '& p, & ul': {
     fontSize: '1.2em',
-    fontFamily: 'Lora,Georgia,Cambria,"Times New Roman",Times,serif',
+    fontFamily: 'Lora,Georgia,Cambria,"Times New Roman",Times,serif'
   },
   '@media (min-width: 768px)': {
     fontSize: '18px',

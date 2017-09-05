@@ -38,7 +38,7 @@ const jumboHeaderStyle = style(baseHeaderStyle, backgroundStyle, {
 
 const jumboHeaderInnerStyle = style({
   background: 'url(/static/images/react.png)',
-  minHeight: '28em',
+  minHeight: '28em'
 })
 
 const regularHeaderBarStyle = style(backgroundStyle, {
@@ -51,7 +51,7 @@ const regularHeaderBarStyle = style(backgroundStyle, {
 const navColumnStyle = style({
   marginTop: '-20px',
   '@media (min-width: 768px)': {
-    marginTop: '0',
+    marginTop: '0'
   }
 })
 
