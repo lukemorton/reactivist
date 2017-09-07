@@ -9,7 +9,6 @@ const baseHeaderStyle = style({
   height: '7.5em',
   overflow: 'hidden',
   textAlign: 'center',
-  textShadow: '0 1px 2px rgba(0,0,0,.2)',
   '@media (min-width: 768px)': {
     height: '4em',
     textAlign: 'left'
@@ -31,6 +30,7 @@ const jumboHeaderStyle = style(baseHeaderStyle, backgroundStyle, {
   boxShadow: '0 1px 8px rgba(0,0,0, .2)',
   height: 'auto',
   minHeight: '28em',
+  textShadow: '0 1px 2px rgba(0,0,0,.2)',
   '@media (min-width: 768px)': {
     height: 'auto'
   }

@@ -7,6 +7,7 @@ const introductionStyle = style({
   color: purple('white'),
   fontSize: '.8em',
   '& .heading': {
+    color: 'white',
     fontWeight: '300'
   },
   '@media (min-width: 768px)': {

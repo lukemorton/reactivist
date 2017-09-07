@@ -10,8 +10,9 @@ import { blue, purple } from '../../Common/colors'
 
 const mainStyle = style({
   background: `url(/static/images/asfalt-dark.png), ${purple('white')}`,
-  color: purple('black'),
+  color: purple('dark'),
   '& h1, & h2, & h3, & h4': {
+    color: purple('black'),
     '& a': {
       color: purple('black'),
       textDecoration: 'none'
