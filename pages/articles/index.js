@@ -11,14 +11,14 @@ export default app.page(() =>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'example' }}>
-            First introduction to React
+            <a>First introduction to React</a>
           </Link>
         </h2>
 
         <p>
           A short excerpt about the article is due to be here in some short while. It will eventually be very great.
           &nbsp;<Link action='articles#show' params={{ slug: 'example' }}>
-            Read now.
+            <a>Read now.</a>
           </Link>
         </p>
 
@@ -30,7 +30,7 @@ export default app.page(() =>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'another' }}>
-            Teaching materials for teams
+            <a>Teaching materials for teams</a>
           </Link>
         </h2>
 
@@ -39,7 +39,7 @@ export default app.page(() =>
         <p>
           A short excerpt about the article is due to be here in some short while. It will eventually be very great.
           &nbsp;<Link action='articles#show' params={{ slug: 'example' }}>
-            Read now.
+            <a>Read now.</a>
           </Link>
         </p>
 
@@ -61,14 +61,14 @@ export default app.page(() =>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'example' }}>
-            Example applications using React
+            <a>Example applications using React</a>
           </Link>
         </h2>
 
         <p>
           A short excerpt about the article is due to be here in some short while. It will eventually be very great.
           &nbsp;<Link action='articles#show' params={{ slug: 'example' }}>
-            Read now.
+            <a>Read now.</a>
           </Link>
         </p>
 
@@ -80,14 +80,14 @@ export default app.page(() =>
 
         <h2>
           <Link action='articles#show' params={{ slug: 'another' }}>
-            Test Driven Development with Jest
+            <a>Test Driven Development with Jest</a>
           </Link>
         </h2>
 
         <p>
           A short excerpt about the article is due to be here in some short while. It will eventually be very great.
           &nbsp;<Link action='articles#show' params={{ slug: 'example' }}>
-            Read now.
+            <a>Read now.</a>
           </Link>
         </p>
 
