@@ -6,7 +6,7 @@ import { purple } from '../../Common/colors'
 const introductionStyle = style({
   color: purple('white'),
   fontSize: '.8em',
-  '& .heading': {
+  '& h1': {
     color: 'white',
     fontWeight: '300'
   },
@@ -16,9 +16,9 @@ const introductionStyle = style({
   }
 })
 
-export default () =>
+export default ({ children }) =>
   <Layout.Row {...introductionStyle} justifyContent='center'>
     <Layout.Column md={11.5}>
-      <h1 className='heading'>We find, develop, and share best practice knowledge in the React community</h1>
+      {children}
     </Layout.Column>
   </Layout.Row>

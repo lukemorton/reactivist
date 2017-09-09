@@ -3,13 +3,15 @@ import app from '../../src/app'
 import { Content, Header, Page } from '../../components/Common'
 import { Introduction, Subscribe } from '../../components/Marketing'
 
-const JumboHeader = () =>
+const IntroHeader = () =>
   <Header jumbo>
-    <Introduction />
+    <Introduction>
+      <h1>We find, develop, and share best practice knowledge in the React community</h1>
+    </Introduction>
   </Header>
 
 export default app.page(() =>
-  <Page title='Reactivist' header={<JumboHeader />}>
+  <Page title='Reactivist' header={<IntroHeader />}>
     <Subscribe />
 
     <Content>
