@@ -20,7 +20,8 @@ const introductionStyle = style({
 const intersectStyle = style({
   marginTop: '-7em',
   '@media (min-width: 768px)': {
-    marginTop: '-10em'
+    marginTop: '-10em',
+    marginBottom: '1em'
   }
 })
 
