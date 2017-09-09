@@ -6,6 +6,7 @@ import Head from './Head'
 import Tracking from './Tracking'
 import Typography from './Typography'
 import Header from './Header'
+import Footer from './Footer'
 import { blue, purple } from '../../Common/colors'
 
 const mainStyle = style({
@@ -35,6 +36,7 @@ export default ({ title, header, children }) =>
       <Head title={title} />
       {header || <Header />}
       {children}
+      <Footer />
     </Typography>
 
     <Tracking />
