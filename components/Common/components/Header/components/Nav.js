@@ -51,7 +51,7 @@ export default ({ jumbo }) =>
     </Link>
 
     <Link action='articles#index'>
-      <a>Latest</a>
+      <a>Latest Articles</a>
     </Link>
 
     <Link action='articles#index'>
