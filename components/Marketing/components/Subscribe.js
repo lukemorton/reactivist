@@ -7,13 +7,6 @@ const subscribeStyle = style({
   boxShadow: '0 0 8px rgba(0,0,0, .1)'
 })
 
-const intersectStyle = style({
-  marginTop: '-7em',
-  '@media (min-width: 768px)': {
-    marginTop: '-10em'
-  }
-})
-
 const ctaStyle = style({
   marginBottom: '-.5em',
   minHeight: '12.1em'
@@ -22,18 +15,15 @@ const ctaStyle = style({
 export default class extends React.Component {
   render () {
     return (
-      <Layout.Row justifyContent='center' {...intersectStyle}>
+      <Card {...subscribeStyle}>
         <Head>
           <script async src='https://assets.convertflow.com/scripts/1535.js' />
         </Head>
-        <Layout.Column md={7}>
-          <Card {...subscribeStyle}>
-            <div {...ctaStyle}>
-              <div dangerouslySetInnerHTML={{ __html: '<div class="cf-cta-snippet cta6385" website-id="1535" cta-id="6385"></div>' }} />
-            </div>
-          </Card>
-        </Layout.Column>
-      </Layout.Row>
+
+        <div {...ctaStyle}>
+          <div dangerouslySetInnerHTML={{ __html: '<div class="cf-cta-snippet cta6385" website-id="1535" cta-id="6385"></div>' }} />
+        </div>
+      </Card>
     )
   }
 }
