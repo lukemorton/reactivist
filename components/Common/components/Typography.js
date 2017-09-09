@@ -16,7 +16,7 @@ const typography = style({
     fontWeight: '700',
     letterSpacing: '.2'
   },
-  '& h1': {
+  '& h1, & .h1': {
     fontSize: '2.8em',
     paddingTop: '0',
     textAlign: 'center'
