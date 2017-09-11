@@ -70,11 +70,11 @@ export default ({ titled, jumbo, children }) =>
 
     <div {...headerInnerStyle(jumbo)}>
       <Layout.Row>
-        <Layout.Column md={4}>
+        <Layout.Column md={3}>
           <Branding jumbo={jumbo} />
         </Layout.Column>
 
-        <Layout.Column md={8} {...navColumnStyle}>
+        <Layout.Column md={9} {...navColumnStyle}>
           <Nav jumbo={jumbo} />
         </Layout.Column>
       </Layout.Row>

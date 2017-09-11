@@ -14,12 +14,7 @@ const Content = ({ children }) =>
   </div>
 
 Content.ReadingColumn = ({ children }) =>
-  <Layout.Column md={8}>
-    {children}
-  </Layout.Column>
-
-Content.ReadingAside = ({ children }) =>
-  <Layout.Column md={4}>
+  <Layout.Column sm={10} lg={8}>
     {children}
   </Layout.Column>
 

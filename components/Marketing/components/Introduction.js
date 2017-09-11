@@ -36,7 +36,7 @@ const Introduction = ({ children }) =>
 
 Introduction.Subscribe = () =>
   <Layout.Row justifyContent='center' {...intersectStyle}>
-    <Layout.Column md={7}>
+    <Layout.Column sm={9} lg={7}>
       <Subscribe />
     </Layout.Column>
   </Layout.Row>
