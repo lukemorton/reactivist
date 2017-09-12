@@ -85,7 +85,9 @@ export default app.page(() =>
           Best,<br />Luke
         </p>
 
-        <Subscribe />
+        <Content.Relaxed>
+          <Subscribe />
+        </Content.Relaxed>
       </Content.ReadingColumn>
     </Content>
   </Page>

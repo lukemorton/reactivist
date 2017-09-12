@@ -19,7 +19,7 @@ Content.ReadingColumn = ({ children }) =>
   </Layout.Column>
 
 Content.Relaxed = ({ children }) =>
-  <div style={{ margin: '0 -1.5em' }}>
+  <div style={{ margin: '3em -1.5em 0 -1.5em' }}>
     {children}
   </div>
 
