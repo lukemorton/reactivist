@@ -63,7 +63,8 @@
   "standard": {
     "globals": [
       "describe",
-      "it"
+      "it",
+      "fetch"
     ]
   }
 }
