@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "prepare": "next build && npm run build:bin && npm run build:src && npm run build:articles",
+    "prepare": "ARTICLES_ORIGIN=https://reactivist.co next build && npm run build:bin && npm run build:src && npm run build:articles",
     "build:bin": "babel bin/ -d dist/bin/",
     "build:src": "babel src/ -d dist/src/",
     "build:articles": "NODE_ENV=production markedly",
