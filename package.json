@@ -1,9 +1,17 @@
 {
   "name": "reactivist",
+  "description": "reactivist.co",
+  "repository": "https://github.com/lukemorton/reactivist",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "build": "next build && babel bin/ -d dist/bin/ && babel src/ -d dist/src/",
+    "prepare": "next build && npm run build:bin && npm run build:src && npm run build:articles",
+    "build:bin": "babel bin/ -d dist/bin/",
+    "build:src": "babel src/ -d dist/src/",
+    "build:articles": "NODE_ENV=production markedly",
     "start": "NODE_ENV=production node dist/bin/start.js",
     "dev": "NODE_ENV=development nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
+    "blog": "NODE_ENV=development nodemon --exec markedly --watch articles --ext md",
     "test": "standard && jest",
     "deploy": "now -t $NOW_TOKEN && now alias -t $NOW_TOKEN"
   },
@@ -12,11 +20,13 @@
     "express": "^4.15.4",
     "glamor": "^2.20.40",
     "hedron": "^0.7.1",
+    "isomorphic-fetch": "^2.2.1",
+    "markedly": "^0.1.4",
     "next": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-ga": "^2.2.0",
-    "republic": "^0.3.2",
+    "republic": "^0.3.3",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
@@ -39,6 +49,10 @@
       "stage-2",
       "react"
     ]
+  },
+  "markedly": {
+    "dir": "articles",
+    "outDir": "static"
   },
   "now": {
     "alias": "reactivist.co"

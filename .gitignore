@@ -9,6 +9,7 @@
 # production
 /build
 /dist
+/static/articles
 /.next
 
 # misc
