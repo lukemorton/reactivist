@@ -1,9 +1,9 @@
 import 'isomorphic-fetch'
 
-const ARTICLES_URL_PREFIX = 'http://localhost:3000'
+const ARTICLES_ORIGIN = process.env.ARTICLES_ORIGIN
 
 async function LoadArticles () {
-  let articleUrl = ARTICLES_URL_PREFIX + '/static/articles/index.json'
+  let articleUrl = ARTICLES_ORIGIN + '/static/articles/index.json'
   const res = await fetch(articleUrl)
   return await res.json()
 }
