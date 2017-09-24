@@ -9,7 +9,7 @@
     "build:bin": "babel bin/ -d dist/bin/",
     "build:src": "babel src/ -d dist/src/",
     "build:articles": "NODE_ENV=production markedly",
-    "start": "NODE_ENV=production node dist/bin/start.js",
+    "start": "NODE_ENV=production ARTICLES_ORIGIN=https://reactivist.co node dist/bin/start.js",
     "dev": "NODE_ENV=development ARTICLES_ORIGIN=http://localhost:3000 nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
     "blog": "NODE_ENV=development nodemon --exec markedly --watch articles --ext md",
     "test": "standard && jest",
@@ -56,9 +56,6 @@
   },
   "now": {
     "alias": "reactivist.co",
-    "env": {
-      "ARTICLES_ORIGIN": "https://reactivist.co"
-    }
   },
   "standard": {
     "globals": [
