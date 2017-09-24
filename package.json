@@ -55,10 +55,7 @@
     "outDir": "static"
   },
   "now": {
-    "alias": "reactivist.co",
-    "files": [
-      "dist"
-    ]
+    "alias": "reactivist.co"
   },
   "standard": {
     "globals": [
