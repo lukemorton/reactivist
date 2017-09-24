@@ -56,6 +56,9 @@
   },
   "now": {
     "alias": "reactivist.co",
+    "files": [
+      "dist"
+    ]
   },
   "standard": {
     "globals": [
