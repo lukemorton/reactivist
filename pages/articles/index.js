@@ -10,7 +10,7 @@ export default app.page(() =>
         <h1>Latest Articles</h1>
 
         <h2>
-          <Link action='articles#show' params={{ slug: 'example' }}>
+          <Link action='articles#show' params={{ slug: 'structuring-component-directories' }}>
             <a>First introduction to React</a>
           </Link>
         </h2>
