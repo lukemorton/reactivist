@@ -4,7 +4,7 @@ import app from '../../src/app'
 import { Card, Content, Hr, Page } from '../../components/Common'
 
 export default app.page(() =>
-  <Page title='Reactivist Article'>
+  <Page title='Latest Articles – Reactivist'>
     <Content>
       <Content.ReadingColumn>
         <h1>Latest Articles</h1>
