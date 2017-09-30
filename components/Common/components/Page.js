@@ -30,7 +30,7 @@ const mainStyle = style({
   }
 })
 
-export default ({ title, header, children }) =>
+const Page = ({ title, header, children }) =>
   <main {...mainStyle}>
     <Typography>
       <Head title={title} />
@@ -41,3 +41,5 @@ export default ({ title, header, children }) =>
 
     <Tracking />
   </main>
+
+export default Page
