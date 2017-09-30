@@ -7,7 +7,7 @@ function logPageView (url) {
   ga.pageview(url)
 }
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && process.env.NODE_ENV === 'production') {
   ga.initialize('UA-105809278-1')
   logPageView(window.location.pathname)
 }
