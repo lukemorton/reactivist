@@ -5,7 +5,7 @@ describe('app', () => {
     'home#index',
     'articles#index',
     'articles#show',
-    'help#index',
+    'help#index'
   ]
 
   actions.forEach((action) => {

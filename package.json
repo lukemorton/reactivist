@@ -21,11 +21,11 @@
     "glamor": "^2.20.40",
     "hedron": "^0.7.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "next": "^4.0.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-ga": "^2.3.4",
-    "republic": "^0.3.6",
+    "republic": "^0.4.0",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
@@ -35,14 +35,14 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "enzyme": "^3.0.0",
-    "enzyme-adapter-react-15": "^1.0.0",
-    "jest": "^20.0.4",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jest": "^21.2.1",
     "jest-enzyme": "^4.0.0",
     "markedly": "^0.1.5",
     "nock": "^9.0.22",
     "nodemon": "^1.11.0",
     "now": "^7.4.0",
-    "react-test-renderer": "^15.6.2",
+    "react-test-renderer": "^16.0.0",
     "standard": "^10.0.3",
     "supertest": "^3.0.0"
   },
@@ -57,7 +57,12 @@
     ]
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./test/testHelper"
+    "setupTestFrameworkScriptFile": "./test/support/",
+    "testPathIgnorePatterns": [
+      "/.next/",
+      "/dist/",
+      "/node_modules/"
+    ]
   },
   "markedly": {
     "dir": "articles",
@@ -71,6 +76,7 @@
       "jest",
       "describe",
       "it",
+      "test",
       "expect",
       "fetch",
       "beforeEach",
