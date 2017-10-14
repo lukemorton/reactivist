@@ -1,5 +1,5 @@
 import React from 'react'
-import app from '../../src/app'
+import app from '../../lib/app'
 import { Content, Page } from '../../components/Common'
 
 export default app.page(() =>

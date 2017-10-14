@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'republic/react'
-import app from '../../src/app'
+import app from '../../lib/app'
 import { Card, Content, Hr, Page } from '../../components/Common'
 
 export default app.page(() =>

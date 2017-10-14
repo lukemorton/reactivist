@@ -1,5 +1,5 @@
 import React from 'react'
-import app from '../../src/app'
+import app from '../../lib/app'
 import { Avatar, Content, Header, Page } from '../../components/Common'
 import { Introduction, Subscribe } from '../../components/Marketing'
 
