@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "build": "ARTICLES_ORIGIN=https://reactivist.co next build && npm run build:bin && npm run build:src && npm run build:articles",
-    "build:bin": "babel bin/ -d dist/bin/",
-    "build:src": "babel src/ -d dist/src/",
+    "build:bin": "babel bin/ -d dist/bin/ --ignore *.test.js",
+    "build:src": "babel src/ -d dist/src/ --ignore *.test.js",
     "build:articles": "NODE_ENV=production markedly",
     "start": "NODE_ENV=production ARTICLES_ORIGIN=https://reactivist.co node dist/bin/start.js",
     "dev": "NODE_ENV=development ARTICLES_ORIGIN=http://localhost:3000 nodemon bin/start.js --exec babel-node --watch bin/start.js --watch src/",
