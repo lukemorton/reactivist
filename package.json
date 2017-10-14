@@ -27,7 +27,8 @@
     "react-dom": "^15.6.1",
     "react-ga": "^2.3.4",
     "republic": "^0.3.6",
-    "styled-components": "^2.1.2"
+    "styled-components": "^2.1.2",
+    "supertest": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

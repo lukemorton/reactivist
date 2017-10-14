@@ -4,11 +4,7 @@ import bodyParser from 'body-parser'
 import { asExpressMiddleware, nextHandler } from 'republic/express'
 import app from './app'
 
-export default async function createServer (dev) {
-  const nextApp = next({ dir: '.', dev })
-
-  await nextApp.prepare()
-
+export function createExpressServer (app, nextApp) {
   const server = express()
 
   // Handle POST data
@@ -21,4 +17,10 @@ export default async function createServer (dev) {
   server.get('*', (req, res) => nextApp.getRequestHandler()(req, res))
 
   return server
+}
+
+export default async function createServer (dev) {
+  const nextApp = next({ dir: '.', dev })
+  await nextApp.prepare()
+  return createExpressServer(app, nextApp)
 }
