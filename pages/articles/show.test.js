@@ -1,6 +1,6 @@
 import { mountPage } from 'republic/test-next'
 import nock from 'nock'
-import ArticlesShowPage from '../../../pages/articles/show'
+import ArticlesShowPage from './show'
 
 function mockArticleIndexRequest () {
   nock(process.env.ARTICLES_ORIGIN)

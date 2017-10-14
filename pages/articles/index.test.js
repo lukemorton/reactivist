@@ -1,5 +1,5 @@
 import { mountPage } from 'republic/test-next'
-import ArticlesIndexPage from '../../../pages/articles/index'
+import ArticlesIndexPage from './index'
 
 describe('articles#index', () => {
   it('should have title', async () => {
