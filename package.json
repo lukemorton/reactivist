@@ -21,6 +21,7 @@
     "glamor": "^2.20.40",
     "hedron": "^0.7.1",
     "isomorphic-fetch": "^2.2.1",
+    "lodash.partial": "^4.2.1",
     "next": "^4.0.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
