@@ -16,7 +16,7 @@ function mockArticleIndexRequest () {
     })
 }
 
-describe('articles#index', () => {
+describe('articles#show', () => {
   it('should have title', async () => {
     mockArticleIndexRequest()
     const page = await mountPage(ArticlesShowPage, 'articles#show', { slug: 'test-article' })
